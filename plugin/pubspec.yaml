@@ -1,0 +1,35 @@
+name: miniapp_plugin
+description: "A Flutter plugin for miniapp functionality"
+version: 0.0.1
+
+environment:
+  sdk: ^3.5.0
+  flutter: ">=3.3.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  plugin_platform_interface: ^2.0.2
+  flutter_localizations:
+    sdk: flutter
+  overlay_support: ^2.1.0
+  vector_math: ^2.1.4
+  intl: ^0.19.0 
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  intl_utils: ^2.8.5  
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.example.miniapp_plugin
+        pluginClass: MiniappPlugin
+      ios:
+        pluginClass: MiniappPlugin
+  uses-material-design: true
+flutter_intl:
+  enabled: true
